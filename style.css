@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "disket";
+  src: url("fonts/Disket-Mono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "disket";
+  src: url("fonts/Disket-Mono-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+main {
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  font-family: "disket";
+  font-size: 8vw;
+  color: white;
+}
+
+.fc {
+  animation: animates 1s ease-in 0s infinite alternate;
+}
+
+.fc1 {
+  animation-delay: 0s;
+}
+.fc2 {
+  animation-delay: 0.5s;
+}
+.fc3 {
+  animation-delay: 1s;
+}
+
+@keyframes animates {
+  0%,
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    /* text-shadow: 0 0 10px #0575e6, 0 0 20px #0575e6, 0 0 40px #0575e6, */
+      /* 0 0 80px #0575e6, 0 0 120px #0575e6, 0 0 160px #0575e6; */
+      
+      text-shadow: 0 0 10px #05e6c8, 0 0 20px #05e6c8, 0 0 40px #05e6c8,
+      0 0 80px #05e6c8, 0 0 120px #05e6c8, 0 0 160px #05e6c8;
+  }
+}
